@@ -2,14 +2,14 @@ const sql = require("mssql");
 sql.on("error", err => console.log);
 
 const config = {
-user: 'abc',
-password: '123',
+user: '<insert username>',
+password: '<insert password>',
 options: {
     enableArithAbort: true,
     encrypt: true
   },
-server: 'localhost',
-database: 'redpheonix',
+server: '<insert server location>',
+database: '<insert db name>',
 };
 
 module.exports.getEmployees = async () => {
